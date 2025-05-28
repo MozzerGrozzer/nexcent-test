@@ -233,70 +233,92 @@ main{
 /* stats */
 
 .stats{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-content{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    background-color: var(--color-neutral-Silver);
-
-    margin: 12px 0px;
 }
 
-.stats-text{
-    margin: 50px 50px 50px 0px;
-}
-
-.stats-text > h3{
-    font-size: 36px;
-}
-
-.stats-card{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 120px;
-}
 
 .stats-item1{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
-    position: relative;
+    align-items: center;
+
+    margin:50px;
+    padding:0px 50px;
+}
+
+.stats-content2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .stats-item2{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
-    position: relative;
+    align-items: center;
+
+    margin:50px;
+    padding:0px 50px;
 }
 
-.stats-img{
-    display:flex;
-    flex-direction: row;
-    position: absolute;
-    right:165px;
-}
-.hands-img{
-    display:flex;
-    flex-direction: row;
-    position: absolute;
-    right:100px;
-}
 /* por algum motivo a kct das mãos são diferentes e tem uma margem fantasma gigante motivo para colocar o designer no olho da rua */
 
 /* Customers */
 
 .customers{
     display: flex;
-    flex-direction: column;
-    align-items: start;
+    flex-direction: row;
     justify-content: center;
+}
 
-    background-color: var(--color-neutral-White);
+#tesla-img{
+    width: 326px;
+    height: 326px;
+
+    margin:32px 70px;
+}
+
+.customers-text{
+    width: 748px;
+    height: 168px;
+
+    margin:32px;
+}
+
+#tim-s{
+    font-size: 20px;
+    font-weight: bold;
+    color:var(--color-primary)
+}
+
+.customer-name > p{
+    color:var(--color-neutral-Grey-blue)
+}
+
+.customers-logo{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:41px;
+
+    margin-top:32px;
+}
+
+.customers-logo > p{
+    font-size: 20px;
+    font-weight: bold;
+    color:var(--color-primary)    
 }
