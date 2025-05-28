@@ -325,8 +325,9 @@ main{
 
 /* update */
 
-.update{
-    margin:15px;
+.updates{
+    padding:32px;
+    background-color: var(--color-neutral-White);
 }
 
 .update-content{
@@ -359,6 +360,12 @@ main{
     flex-direction: column;
 }
 
+.update-item-content{
+    background-color: var(--color-tint-5);
+    margin-top:-30px;
+    padding:10px;
+}
+
 .update-item-text{
     display:flex;
     flex-direction: column;
@@ -377,3 +384,31 @@ main{
     height: 84px;
     text-align: center;
 }
+
+/* DEMO */
+
+.demo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-neutral-Silver);
+    margin: 32px 0px;
+}
+
+.demo > h2{
+    text-align: center;
+    font-size: 64px;
+}
+
+.demo-btn{
+    background-color: var(--color-primary);
+    padding: 14px 32px;
+    margin: 32px;
+}
+
+.demo-btn > a{
+    color: var(--color-neutral-White);    
+}
+
+/* footer */
