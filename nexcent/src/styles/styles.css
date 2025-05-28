@@ -1,0 +1,302 @@
+*{
+    padding:0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --color-neutral-black: #263238;
+    --color-neutral-D_grey: #4d4d4d;
+    --color-neutral-grey: #717171;
+    --color-neutral-L_Grey: #89939e;
+    --color-neutral-Grey-blue: #ABBED1;
+    --color-neutral-Silver: #F5F7FA;
+    --color-neutral-White: #FFFFFF;
+
+    --color-primary: #4CAF4F;
+
+    --color-secondary: #263238;
+
+    --color-info: #2194f3;
+
+    --color-shade-1: #43A046;
+    --color-shade-2: #388e3b;
+    --color-shade-3: #237d31;
+    --color-shade-4: #1B5E1F;
+    --color-shade-5: #103E13;
+
+    --color-tint-1: #66BB69;
+    --color-tint-2: #81C784;
+    --color-tint-3: #A5D6A7;
+    --color-tint-4: #C8E6C9;
+    --color-tint-5: #E8F5E9;
+
+    --action-warning: #FBC02D;
+    --action-error: #E53835;
+    --action-success: #2E7D31;
+
+    --font:"Inter", sans-serif;
+
+}
+
+body{
+    font-family: var(--font);
+    background-color: var(--color-neutral-Silver);
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 30px 105px;
+}
+
+.header-links{
+    display: flex;
+    gap:50px;
+    text-transform: capitalize;
+    color: var(--color-neutral-black);
+}
+
+.header-links a{
+    color: var(--color-neutral-black);
+}
+
+.header-buttons{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    }
+
+#sign-up{
+    padding:10px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-neutral-White)
+}
+
+#login{
+    padding:10px 20px;
+    background-color: var(--color-neutral-White);
+    color:var(--color-primary);
+}
+
+/* MAIN */
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding:96px 144px;
+}
+
+.main-img{
+    margin:14px;
+}
+
+#register-btn{
+    background-color: var(--color-primary);
+    color: var(--color-neutral-White);
+    margin:32px 0px;
+    padding: 14px 32px;
+}
+
+.main-text >h1{
+    font-size: 64px;
+    padding-right: 70px;
+}
+
+.main-text >p{
+    font-size: 14px;
+    padding-right:30px;
+    margin-top: 17px;
+}
+
+#years{
+    color:var(--color-primary)
+}
+
+/* clients */
+
+.clients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding:40px 0px;
+
+    background-color: var(--color-neutral-White);
+}
+
+.logos{
+    display: flex;
+    gap: 132px;
+    margin:18px;
+}
+
+/* cards */
+
+.onboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:40px 0px;
+    background-color: var(--color-neutral-White);
+}
+
+.onboard > h2{
+    font-size: 36px;
+    text-align: center;
+    padding: 0px 500px;
+}
+
+.onboard > p{
+    font-size: 14px;
+    text-align: center;
+    margin-top: 8px; 
+}
+
+
+.card{
+    display:flex;
+    flex-direction: row;
+    gap:122px;
+}
+
+.card-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+    
+    border: 1px solid var(--color-neutral-black);
+
+    width: 300px;
+    height: 260px;
+
+    padding:10px 30px;
+    margin:15px;
+
+    text-align: center;
+}
+
+/* terminei essa porra mds que orgulho vtnc vtnc vtnc */
+/* learn more */
+
+.learn-more{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-neutral-White);
+}
+
+.frame-35{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin:50px 50px 50px 240px;;
+}
+
+.learn-more-text > h3 {
+    
+    font-size: 36px;
+    color: var(--color-neutral-grey);
+    padding-right: 300px;
+}
+
+.learn-more-text > p {
+    font-size: 14px;
+    color: var(--color-neutral-grey);
+    padding-right: 240px;
+}
+
+#read-more-btn{
+    background-color: var(--color-primary);
+    color: var(--color-neutral-White);
+    padding: 14px 32px;
+    margin-top: 32px;
+}
+
+/* stats */
+
+.stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--color-neutral-Silver);
+
+    margin: 12px 0px;
+}
+
+.stats-text{
+    margin: 50px 50px 50px 0px;
+}
+
+.stats-text > h3{
+    font-size: 36px;
+}
+
+.stats-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 120px;
+}
+
+.stats-item1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.stats-item2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.stats-img{
+    display:flex;
+    flex-direction: row;
+    position: absolute;
+    right:165px;
+}
+.hands-img{
+    display:flex;
+    flex-direction: row;
+    position: absolute;
+    right:100px;
+}
+/* por algum motivo a kct das mãos são diferentes e tem uma margem fantasma gigante motivo para colocar o designer no olho da rua */
+
+/* Customers */
+
+.customers{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+
+    background-color: var(--color-neutral-White);
+}
